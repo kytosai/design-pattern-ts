@@ -1,8 +1,3 @@
-class App {
-  init() {
-  
-  }
-}
+import { strategyPattern } from './behavioralPatterns/strategyPattern';
 
-const app = new App();
-app.init();
+strategyPattern();
