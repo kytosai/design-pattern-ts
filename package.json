@@ -1,0 +1,28 @@
+{
+  "name": "pizza-oop-basic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kytosai/pizza-oop-basic.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kytosai/pizza-oop-basic/issues"
+  },
+  "homepage": "https://github.com/kytosai/pizza-oop-basic#readme",
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "nodemon": "^2.0.12",
+    "prettier": "^2.4.1",
+    "ts-node": "^10.2.1",
+    "tsconfig-paths": "^3.11.0",
+    "typescript": "^4.4.3"
+  }
+}
