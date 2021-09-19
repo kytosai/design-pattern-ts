@@ -12,10 +12,10 @@ export function observerPattern() {
   // Thử set title và tất cả notifier đều bắn
   videoData.setTitle('New video title ne');
 
+  console.log('--------------------------------');
+
   // Thử xoá 1 notifier khỏi danh sách notifier
   videoData.detachObserver(phoneNotifier);
-
-  console.log('--------------------------------');
 
   // Thử change desc để check lại danh sách notifier mới
   videoData.setDescription('New desc');
@@ -24,5 +24,7 @@ export function observerPattern() {
 
   // Thử thêm 1 notifier mới vào danh sách notifer
   new YoutubeNotifier(videoData);
+
+  // Change prop để check lại danh notifier 
   videoData.setFileName('New filename');
 }
