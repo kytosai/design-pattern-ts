@@ -1,3 +1,3 @@
-import { strategyPattern } from './behavioralPatterns/strategyPattern';
+import { observerPattern } from '@/behavioralPatterns/observerPattern';
 
-strategyPattern();
+observerPattern();
