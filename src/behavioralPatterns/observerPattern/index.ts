@@ -6,18 +6,23 @@ import { VideoData } from './VideoData';
 export function observerPattern() {
   const videoData = new VideoData();
 
-  const emailNotifier = new EmailNotifier(videoData);
+  new EmailNotifier(videoData);
   const phoneNotifier = new PhoneNotifier(videoData);
-  const youtubeNotifier = new YoutubeNotifier(videoData);
 
   // Thử set title và tất cả notifier đều bắn
   videoData.setTitle('New video title ne');
 
-  // Thử xoá 1 notifier khỏi danh sách notifier 
-  videoData.detachObserver(youtubeNotifier);
+  // Thử xoá 1 notifier khỏi danh sách notifier
+  videoData.detachObserver(phoneNotifier);
 
   console.log('--------------------------------');
 
   // Thử change desc để check lại danh sách notifier mới
   videoData.setDescription('New desc');
+
+  console.log('--------------------------------');
+
+  // Thử thêm 1 notifier mới vào danh sách notifer
+  new YoutubeNotifier(videoData);
+  videoData.setFileName('New filename');
 }
